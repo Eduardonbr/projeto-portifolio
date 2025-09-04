@@ -153,14 +153,14 @@ a.icon{
 aside.details{
   grid-area: 2 / 2 / 3 / 3;
   max-width: 600px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 section.video-portfolio{
   background-color: white;
   border-radius: 10px;
   border-top-left-radius: 10px;
-  margin-top: 20px;
+
 }
 
 h1#let-me-introduce-myself{
@@ -172,14 +172,16 @@ h1#let-me-introduce-myself{
 
 section.flex{
   display: flex;
-  padding: 10px 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
   overflow-x: hidden;
+
 }
 
 iframe#video{
   margin: auto;
   border-radius: 10px;
   max-width: 100%;
+
 }
 
 div#flex-icon{

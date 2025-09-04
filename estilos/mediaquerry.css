@@ -9,6 +9,33 @@ Desktop: 992px - 1200px
 Grandes Telas: 1200px -
 */
 
-@media screen and (min-width: 600px) and (max-width: 768px){
+@media screen and (min-width: 768px){
+    main.technical-sheet{
+        grid-template: 1fr / 2.5% 1.1fr 3fr  2.5%;
+    }
 
+    aside.intro{
+        grid-area: 1 / 2 / 2 / 3;      
+    }
+
+    aside.details{
+        grid-area: 1 / 3 / 2 / 4;
+
+        margin-top: 0px;
+        margin-left: 20px;
+        max-width: none;
+
+    }
+
+    iframe#video{
+        max-width: none;
+        width: 100%;
+
+    
+    }
+
+    section.video-portfolio{
+
+
+}
 }
