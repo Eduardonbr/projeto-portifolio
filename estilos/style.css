@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* 
   Variáveis para cores:
     rgb(78, 78, 255);
@@ -17,6 +19,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+  background-color: rgb(224, 224, 224);
+}
+
 /*-------------------- HEADER --------------------*/
 
 .navbar{
@@ -26,6 +32,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 ul.nav-list{
@@ -65,10 +72,18 @@ li.list-item{
 
 main.technical-sheet{
   display: grid;
-  grid-template: 1fr 1fr / 2.5% 95% 2.5%;
+  grid-template: 0.7fr 6fr / 2.5% 95% 2.5%;
+
 }
 
 aside.intro{
+  background-color: white;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0px auto;
+  height: auto;
+
+
   grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -100,11 +115,35 @@ h1#my-name{
   padding-top: 10px;
   padding-left: 20px;
   color: rgb(78, 78, 255);
+  font-size: 2em;
 }
 
 p#presentation{
   padding: 10px 20px 10px 20px;
+  margin: auto;
   text-align: justify;
+}
+
+ul.media-list{
+display: flex;
+justify-content: center;
+}
+
+li.media-item{
+  text-align: center;
+  padding: 5px;
+  font-size: 24px;
+  list-style-type: none;
+  
+  transition: 0.3s ease;
+}
+
+li.media-item:hover{
+  transform: scale(1.2);
+}
+
+a.icon{
+  color: rgb(78, 78, 255);
 }
 
 /*-------------------- FIM DA ASIDE.INTRO --------------------*/
@@ -113,4 +152,262 @@ p#presentation{
 
 aside.details{
   grid-area: 2 / 2 / 3 / 3;
+  max-width: 600px;
+  margin: 10px auto;
 }
+
+section.video-portfolio{
+  background-color: white;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 20px;
+}
+
+h1#let-me-introduce-myself{
+  padding-top: 10px;
+  color: rgb(78, 78, 255);
+  font-size: 1.5em;
+  text-align: left;
+}
+
+section.flex{
+  display: flex;
+  padding: 10px 20px 20px 20px;
+  overflow-x: hidden;
+}
+
+iframe#video{
+  margin: auto;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+div#flex-icon{
+  display: flex;
+  align-items: center;
+}
+
+i#handshake{
+  background-color: white;
+  color: rgb(78, 78, 255);
+  margin: 0px;
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 20px;
+}
+
+/*-------------------- MAIN / SKILLS --------------------*/
+
+aside.skills{
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: white;
+}
+
+section.technical-skills{
+  padding-top: 10px;
+}
+
+h1#title-skills{
+  color: rgb(78, 78, 255);
+  font-size: 1.5em;
+  text-align: left;
+}
+
+i#brain{
+  background-color: white;
+  color: rgb(78, 78, 255);
+  border-radius: 10px;
+  padding-right: 20px;
+  font-size: 2em;
+}
+
+h2.subtitle-skills{
+  color: rgb(78, 78, 255);
+  font-size: 1em;
+  text-align: left;
+  padding-top: 20px;
+}
+
+div.title-progress{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: rgb(78, 78, 255);
+}
+
+div.teste-modelagem:hover{
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+div.progress-container{
+  width: 0 auto;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 3px solid rgb(78, 78, 255);
+  margin: 5px;
+}
+
+div.percent-html{
+  width: 70%;
+  height: 10px;
+  
+  background-color: rgb(78, 78, 255);
+  border-radius: 10px;
+}
+
+div.percent-css{
+  width: 60%;
+  height: 10px;
+  background-color: rgb(78, 78, 255);
+  border-radius: 10px;
+}
+
+div.percent-jv{
+  width: 10%;
+  height: 10px;
+  background-color: rgb(78, 78, 255);
+  border-radius: 10px;
+}
+
+/*-------------------- MAIN / FORMATION --------------------*/
+
+aside.formation{
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: white;
+}
+
+h1#title-formation{
+  color: rgb(78, 78, 255);
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+a.link-formation{
+  text-decoration: none;
+}
+
+div#html5:hover{
+  transform: translateX(10px);
+  transition: 0.5s ease;
+}
+
+section.range-blue{
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: auto;
+  background-color: rgb(78, 78, 255);
+  border-radius: 10px;
+}
+
+div#html5{
+  width: calc(100% - 25px);
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+div#html5 > h2{
+  color: rgb(78, 78, 255);
+  font-size: 1em;
+  padding: 5px;
+}
+
+p.hour{
+  font-weight: bold;
+  padding-left: 5px;
+  color: black;
+}
+
+p.info-formation{
+  padding-left: 5px;
+  color: black;
+}
+
+/*-------------------- MAIN / PROJECTS --------------------*/
+
+aside.projects{
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: white;
+}
+h1#title-projects{
+  font-size: 1.5em;
+  color: rgb(78, 78, 255);
+}
+
+section.login-project{
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  
+  background-color: rgb(78, 78, 255);
+  border-radius: 10px;
+}
+
+div.fluid-project{
+  background-color: lightgray;
+  border-radius: 10px;
+  width: calc(100% - 5px);
+  padding-bottom: 5px;
+}
+
+div.fluid-project:hover{
+  transform: translateX(10px);
+  transition: 0.3s ease;
+}
+
+a.link-project{
+  text-decoration: none;
+}
+
+img#login{
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+
+h2.subtitle-project{
+  font-size: 1.2em;
+  padding: 5px 0px 5px 10px;
+  color: black;
+}
+
+div.fluid-project > a.link-project > p{
+  color: black;
+  padding: 2px;
+  padding-left: 10px;
+}
+
+footer{
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(78, 78, 255);
+}
+
+section#footer{
+  background-color: rgb(78, 78, 255);
+}
+
+p#footer{
+  color: white;
+  text-align: center;
+}
+
+span#bold-name{
+  font-weight: bold;
+}
+
